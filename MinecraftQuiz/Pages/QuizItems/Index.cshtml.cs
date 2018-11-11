@@ -22,7 +22,7 @@ namespace MinecraftQuiz.Pages.QuizItems
 
         public async Task OnGetAsync()
         {
-            QuizItem = await _context.QuizItem.ToListAsync();
+            QuizItem = await _context.QuizItems.ToListAsync();
         }
     }
 }

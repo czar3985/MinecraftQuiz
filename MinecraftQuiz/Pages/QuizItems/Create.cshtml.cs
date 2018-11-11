@@ -33,7 +33,7 @@ namespace MinecraftQuiz.Pages.QuizItems
                 return Page();
             }
 
-            _context.QuizItem.Add(QuizItem);
+            _context.QuizItems.Add(QuizItem);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -29,7 +29,7 @@ namespace MinecraftQuiz.Pages.QuizItems
                 return NotFound();
             }
 
-            QuizItem = await _context.QuizItem.FirstOrDefaultAsync(m => m.ID == id);
+            QuizItem = await _context.QuizItems.FirstOrDefaultAsync(m => m.ID == id);
 
             if (QuizItem == null)
             {
@@ -68,7 +68,7 @@ namespace MinecraftQuiz.Pages.QuizItems
 
         private bool QuizItemExists(int id)
         {
-            return _context.QuizItem.Any(e => e.ID == id);
+            return _context.QuizItems.Any(e => e.ID == id);
         }
     }
 }

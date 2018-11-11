@@ -13,6 +13,6 @@ namespace MinecraftQuiz.Models
         {
         }
 
-        public DbSet<MinecraftQuiz.Models.QuizItem> QuizItem { get; set; }
+        public DbSet<MinecraftQuiz.Models.QuizItem> QuizItems { get; set; }
     }
 }

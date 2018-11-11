@@ -27,7 +27,7 @@ namespace MinecraftQuiz.Pages.QuizItems
                 return NotFound();
             }
 
-            QuizItem = await _context.QuizItem.FirstOrDefaultAsync(m => m.ID == id);
+            QuizItem = await _context.QuizItems.FirstOrDefaultAsync(m => m.ID == id);
 
             if (QuizItem == null)
             {

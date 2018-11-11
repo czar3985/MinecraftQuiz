@@ -28,7 +28,7 @@ namespace MinecraftQuiz.Pages.QuizItems
                 return NotFound();
             }
 
-            QuizItem = await _context.QuizItem.FirstOrDefaultAsync(m => m.ID == id);
+            QuizItem = await _context.QuizItems.FirstOrDefaultAsync(m => m.ID == id);
 
             if (QuizItem == null)
             {
@@ -44,11 +44,11 @@ namespace MinecraftQuiz.Pages.QuizItems
                 return NotFound();
             }
 
-            QuizItem = await _context.QuizItem.FindAsync(id);
+            QuizItem = await _context.QuizItems.FindAsync(id);
 
             if (QuizItem != null)
             {
-                _context.QuizItem.Remove(QuizItem);
+                _context.QuizItems.Remove(QuizItem);
                 await _context.SaveChangesAsync();
             }
 

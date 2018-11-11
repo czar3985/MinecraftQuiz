@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MinecraftQuiz.Models;
 
 namespace MinecraftQuiz.Migrations
 {
     [DbContext(typeof(MinecraftQuizContext))]
-    partial class MinecraftQuizContextModelSnapshot : ModelSnapshot
+    [Migration("20181111035835_changePlural")]
+    partial class changePlural
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -8,7 +8,7 @@ namespace MinecraftQuiz.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "QuizItem",
+                name: "QuizItems",
                 columns: table => new
                 {
                     ID = table.Column<int>(nullable: false)
@@ -25,7 +25,7 @@ namespace MinecraftQuiz.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "QuizItem");
+                name: "QuizItems");
         }
     }
 }

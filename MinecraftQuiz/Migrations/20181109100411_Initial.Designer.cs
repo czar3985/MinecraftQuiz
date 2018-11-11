@@ -20,7 +20,7 @@ namespace MinecraftQuiz.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MinecraftQuiz.Models.QuizItem", b =>
+            modelBuilder.Entity("MinecraftQuiz.Models.QuizItems", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -32,7 +32,7 @@ namespace MinecraftQuiz.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("QuizItem");
+                    b.ToTable("QuizItems");
                 });
 #pragma warning restore 612, 618
         }
